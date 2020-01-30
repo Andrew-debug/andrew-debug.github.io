@@ -1,0 +1,27 @@
+
+// *****************
+// Color Variables
+// *****************
+$white: #fff;
+$black: #000;
+$lightblack: #131313; 
+$burgundy: #ce0000;
+$keka: linear-gradient(to bottom, #821C1A 0%, #821C1A 20%, #cc0000 100%);
+
+
+
+// *****************
+// BREAKPOINTS
+// *****************
+$breakpoint-desktop: 1200px;
+$breakpoint-laptop: 950px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 400px;
+// @media (max-width: $breakpoint-tablet) {
+
+// }
+
+// *****************
+// Fonts
+// *****************
+$font-regular: 'Rationale', sans-serif;
