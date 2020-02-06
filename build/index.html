@@ -6,143 +6,151 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../build/styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Rationale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/aos.css">
     <title>Portfolio.v2</title>
 </head>
 <body>
-
-<header class="header">
+<header id="header" data-aos="zoom-in" class="header">
     <div class="header__inner">
-        <div class="header__logo">Andrei Yatsenko</div>
+        <a href="./index.html" class="header__logo">Andrei Yatsenko</a>
 
         <nav class="nav">
-            <a class="nav__link" href="./index.html">Work</a>
-            <a class="nav__link" href="./skills.html">Skills</a>
-            <a class="nav__link" href="#">Say Hello!</a>
+            <div class="nav__hamburger">
+                <div class="nav__line"></div>
+                <div class="nav__line"></div>
+                <div class="nav__line"></div>
+            </div>
 
-            <a class="nav__link center" href="#">
-                <h4>EN</h4>
-                <input type="checkbox" name="">
-                <h4>RU</h4>
-            </a>
-
-        </nav>
-
+            <ul class="nav__links">
+                <li><a class="nav__link" href="./index.html">Work</a></li>
+                <li><a class="nav__link nav__link--hidden" href="./services.html">What I do</a></li>
+                <li><a class="nav__link" href="./skills.html">Skills</a></li>
+                <li><a class="nav__link" href="./about.html">About</a></li>
+            </ul>
+        </nav>    
+           
     </div>
 </header>
 
-<div id="swup" class="intro transition-fade">
+<div class="intro">
     <div class="container">
-        <div class="intro__content">
-            <h2 class="intro__title">Front-end</h2>
-            <h2 class="intro__title">Developer</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            <a href="#" class="global__button">About</a>
+        <div data-aos="zoom-in" data-aos-duration="1200" class="intro__content">
+            <h2 class="intro__title">Front-end Developer</h2>
+            <p>
+                Front-end developer based in Kyiv, Ukraine who loves building websites. Working as front-end developer passionate about combining beautiful code with beautiful design. Being resposibile for making your project successful is nothing but pleasure for me. Weather it is a simple landing page or really big project of some sort I'll get the job done whatever it takes.
+            </p>
+            <a href="./about.html" class="global__button">About</a>
         </div>
     </div>
 </div>
 
-<div class="peek">
-    <ul>
-        <li class="peek__item">
-            <a class="item__link link1" href="#">Blooger</a>
-            <img src="./images/peek-work/1.png" alt="">
-        </li>
-        <li class="peek__item">
-            <a class="item__link link2" href="#">ActiveBox</a>
-            <img src="./images/peek-work/2.png" alt="">
-        </li>
-        <li class="peek__item">
-            <a class="item__link link3"href="#">Portfolio</a>
-            <img src="./images/peek-work/1.png" alt="">
-        </li>
-        
-    </ul>
-</div>
+
+<section data-aos="fade-up" class="timeline">
+    <div class="tl-item">
+        <div class="tl-bg" style="background-image: url(images/timeline/timeline1.jpg)"></div>
+
+        <div class="tl-year">
+            <p class="f2 heading">2020</p>
+        </div>
+
+        <div class="tl-content">
+            <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero architecto ad autem voluptatum illum illo, nemo quisquam, ducimus numquam debitis blanditiis dicta sunt veritatis recusandae aut cupiditate iusto id.</p>
+        </div>
+
+    </div>
+
+
+    <div class="tl-item">
+        <div class="tl-bg" style="background-image: url(images/timeline/timeline2.jpg);"></div>
+
+        <div class="tl-year">
+            <p class="f2 heading">2020</p>
+        </div>
+
+        <div class="tl-content">
+            <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero architecto ad autem voluptatum illum illo, nemo quisquam, ducimus numquam debitis blanditiis dicta sunt veritatis recusandae aut cupiditate iusto id.</p>
+        </div>
+
+    </div>
+
+
+    <div class="tl-item">
+        <div class="tl-bg" style="background-image: url(images/timeline/timeline3.jpg);"></div>
+
+        <div class="tl-year">
+            <p class="f2 heading">2020</p>
+        </div>
+
+        <div class="tl-content">
+            <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero architecto ad autem voluptatum illum illo, nemo quisquam, ducimus numquam debitis blanditiis dicta sunt veritatis recusandae aut cupiditate iusto id.</p>
+        </div>
+
+    </div>
+
+
+    <div class="tl-item">
+        <div class="tl-bg" style="background-image: url(images/timeline/timeline4.jpg);"></div>
+
+        <div class="tl-year">
+            <p class="f2 heading">2020</p>
+        </div>
+
+        <div class="tl-content">
+            <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero architecto ad autem voluptatum illum illo, nemo quisquam, ducimus numquam debitis blanditiis dicta sunt veritatis recusandae aut cupiditate iusto id.</p>
+        </div>
+
+    </div>
+</section>
+
 
 <div class="work">
+    <div class="container">
+        <div data-aos="fade-up" class="work__row">
+            <div class="work__text">
+                <h2>Blooger</h2>
+                <p>This is one of my first projects. Very simple landing page that look preety good for me and in my opinion very interesting for beginners in my sphere.</p>
+                <a class="global__button" href="https://andrew-debug.github.io/Blooger-layout/" target="_blank">Explore</a>
+            </div>
 
-    <div class="work__row">
-        <div class="container">
-            <div class="work__image"></div>    
+            <div class="work__image">
+                <a href="https://andrew-debug.github.io/Blooger-layout/" target="_black"><img src="./images/peek-work/1.png" alt=""></a>
+            </div>  
+        </div>
+
+        <div data-aos="fade-up" class="work__row">
+            <div class="work__image">
+                <a href="./activebox.html" target="_blank"><img src="./images/peek-work/2.png" alt=""></a>
+            </div>    
 
             <div class="work__text">
-                <h2>Lorer Ipsum</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                <a class="global__button" href="#">About</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="work__row">
-        <div class="container">
-            <div class="work__image work__image--reverse-left"></div>    
-
-            <div class="work__text work__image--reverse-right">
-                <h2>Lorer Ipsum</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                <a class="global__button" href="#">About</a>
+                <h2>Active Box</h2>
+                <p>This is my very first project. Was build with the help you a youtuber who made a tutorial for beginners about building a website with the help of HTML, CSS and jQuery. Very useful expirience especially working with jQuery.</p>
+                <a class="global__button" href="./activebox.html" target="_blank">Explore</a>
             </div>   
         </div>
-    </div>
 
-    <div class="work__row">
-        <div class="container">
-            <div class="work__image"></div>    
+        <div data-aos="fade-up" class="work__row">
+               
 
             <div class="work__text">
-                <h2>Lorer Ipsum</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                <a class="global__button" href="#">About</a>
-            </div>  
-        </div>  
+                <h2>Portfolio v1</h2>
+                <p>This is my very first project which I created all by my self. From designing to creating it into functional portfolio. Was build after a few month after I starded studying front-end. Not very nice, but hey, practise makes everything perfect.</p>
+                <a class="global__button" href="https://andrew-debug.github.io/portfoliov1/build/index.html" target="_blank">Explore</a>
+            </div> 
+            
+            <div class="work__image">
+                <a href="https://andrew-debug.github.io/portfoliov1/build/index.html" target="_blank"><img src="./images/peek-work/3.png" alt=""></a>
+            </div> 
+        </div> <!-- work__row -->
     </div>
-</div>
+</div> <!-- work -->
 
 
-<!-- <div class="services">
-
-    <div class="work__wrap">
-        <div class="work__row">
-            <div class="container">
-                <div class="work__image work__image--reverse-left""></div>    
-                <div class="work__text work__image--reverse-right">
-                    <h2>WEB DEVELOPMENT</h2>
-                    <p>Using HTML, CSS, and JavaScript with pre-processors and build tools such as Sass and Grunt, I have a passion for developing pixel-perfect websites and apps while maintaining a semantic, modular, and DRY code base.</p>
-                </div>  
-            </div>  
-        </div>
-
-        <div class="work__row">
-            <div class="container">
-                <div class="work__image"></div>    
-                <div class="work__text">
-                    <h2>RESPONSIVE UI DESIGN</h2>
-                    <p>Since the world is consumed by smartphones, in my opinion, it's vital to make a product responsive on any platform, hence to make a product as much accessible as it possible, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>  
-            </div>  
-        </div>
-
-        <div class="work__row">
-            <div class="container">
-                <div class="work__image work__image--reverse-left""></div>    
-                <div class="work__text work__image--reverse-right">
-                    <h2>EXPIRIENCE DESIGN</h2>
-                    <p>Are you familiar with that feeling, when you are a few seconds away from throwing your computer out the window, because of slow loading website or confusing features on it? I'm here to improve product and make it successful.</p>
-                </div>  
-            </div>  
-        </div>
-
-        <div class="work__row">
-            <div class="container">
-                <div class="work__image"></div>    
-                <div class="work__text">
-                    <h2>FUN INTERACTION</h2>
-                    <p>Any subject can be interesting if you make it interactive. JavaScript is here to help me to make a product more interective, moder, and interesting for a visitor. I believe, that is the most important thing, make a product nice for a user.</p>
-                </div>  
-            </div>  
-        </div>
-    </div>
-</div> -->
+<a class="up__button" href="#"><i class="fas fa-arrow-up"></i></a>
 
 <footer class="footer">
     <div class="footer__wrapper">
@@ -169,14 +177,8 @@
     </div>
 </footer> 
 
-
-
-
-
-
-<!-- <h1 data-text="Fill Text">Fill Text</h1> -->
-
-<!-- <script src="../src/scripts/swup.min.js"></script>
-<script src="../src/scripts/app.js"></script> -->
+<script src="./scripts/aos.js"></script>
+<script src="../src/scripts/main.js"></script>
+<script src="https://kit.fontawesome.com/05e40f5d54.js" crossorigin="anonymous"></script>
 </body>
 </html>

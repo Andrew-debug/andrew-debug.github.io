@@ -6,34 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../build/styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Rationale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/aos.css">
     <title>Skills</title>
 </head>
 <body>
-    
-<header class="header">
+<header data-aos="zoom-in" class="header">
     <div class="header__inner">
-        <div class="header__logo">Andrei Yatsenko</div>
+        <a href="./index.html" class="header__logo">Andrei Yatsenko</a>
 
         <nav class="nav">
-            <a class="nav__link" href="./index.html">Work</a>
-            <a class="nav__link" href="#">Skills</a>
-            <a class="nav__link" href="#">Say Hello!</a>
+            <div class="nav__hamburger">
+                <div class="nav__line"></div>
+                <div class="nav__line"></div>
+                <div class="nav__line"></div>
+            </div>
 
-            <a class="nav__link center" href="#">
-                <h4>EN</h4>
-                <input type="checkbox" name="">
-                <h4>RU</h4>
-            </a>
-
-        </nav>
-
+            <ul class="nav__links">
+                <li><a class="nav__link" href="./index.html">Work</a></li>
+                <li><a class="nav__link nav__link--hidden" href="./services.html">What I do</a></li>
+                <li><a class="nav__link" href="./skills.html">Skills</a></li>
+                <li><a class="nav__link" href="./about.html">About</a></li>
+            </ul>
+        </nav>    
+            
     </div>
 </header>
 
 
-<div id="swup" class="skills transition-fade clear">
+<div class="skills clear">
 
-    <div class="skills__link">
+    <div data-aos="fade-up" class="skills__link">
         <a href="./services.html">
             <ul>
                 <li class="work__letter">S</li>
@@ -50,54 +52,58 @@
 
 
     <div class="skills__inner">
+        <div class="container">
 
-        <div class="work__wrap">
-            <div class="work__row">
-                <div class="container">
-                    <div class="work__image work__image--reverse-left""></div>    
-                    <div class="work__text work__image--reverse-right">
-                        <h2>WEB DEVELOPMENT</h2>
-                        <p>Using HTML, CSS, and JavaScript with pre-processors and build tools such as Sass and Grunt, I have a passion for developing pixel-perfect websites and apps while maintaining a semantic, modular, and DRY code base.</p>
-                    </div>  
+            <div data-aos="fade-down" class="work__row">
+                <div class="work__text">
+                    <h2>DEVELOPMENT</h2>
+                    <p>I possess HTML for building blocks of the Web. CSS for describing the presentation of a document written in HTML. For making this process easier I use preprocessors Sass and less which are interpreted or compiled into CSS. For improving a website, making it interactive and not boring I use JavaScript. Usually, native JavaScript is all you want for your project, but it's always a good thing to have a buckup, thus this is appropriate to know such libraries as React and jQuery which I study right now.</p>
+                </div>  
+
+                <div class="work__image">
+                    <img src="./images/skills/1.jpg" alt="">
+                </div>
+            </div>
+
+            <div data-aos="fade-right" class="work__row">
+                <div class="work__image">
+                    <img src="./images/skills/2.jpg" alt="">
+                </div> 
+
+                <div class="work__text">
+                    <h2>Design</h2>
+                    <p>Using such programms as photoshop, sketch and figma I can create design for a website and a layout itself.</p>
                 </div>  
             </div>
 
-            <div class="work__row">
-                <div class="container">
-                    <div class="work__image"></div>    
-                    <div class="work__text">
-                        <h2>RESPONSIVE UI DESIGN</h2>
-                        <p>Since the world is consumed by smartphones, in my opinion, it's vital to make a product responsive on any platform, hence to make a product as much accessible as it possible, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>  
+            <div data-aos="fade-left" class="work__row">
+                <div class="work__text">
+                    <h2>Tools</h2>
+                    <p>Using git system is a musthave for projects, wheather one persong working on it or a team. I thing there's no doubt about impact of a command-line intefrace in IT, hereby every person who is involved into this should possess this technology atleast on basic level. DevTools can help you edit pages on-the-fly and diagnose problems quickly, which ultimately helps you build better websites, faster.</p>
+                </div>  
+
+                <div class="work__image">
+                    <img src="./images/skills/3.jpg" alt="">
                 </div>  
             </div>
 
-            <div class="work__row">
-                <div class="container">
-                    <div class="work__image work__image--reverse-left""></div>    
-                    <div class="work__text work__image--reverse-right">
-                        <h2>EXPIRIENCE DESIGN</h2>
-                        <p>Are you familiar with that feeling, when you are a few seconds away from throwing your computer out the window, because of slow loading website or confusing features on it? I'm here to improve product and make it successful.</p>
-                    </div>  
-                </div>  
-            </div>
+            <div data-aos="fade-up" class="work__row">
+                <div class="work__image">
+                    <img src="./images/skills/4.png" alt="">
+                </div> 
 
-            <div class="work__row">
-                <div class="container">
-                    <div class="work__image"></div>    
-                    <div class="work__text">
-                        <h2>FUN INTERACTION</h2>
-                        <p>Any subject can be interesting if you make it interactive. JavaScript is here to help me to make a product more interective, moder, and interesting for a visitor. I believe, that is the most important thing, make a product nice for a user.</p>
-                    </div>  
+                <div class="work__text">
+                    <h2>Soft skills</h2>
+                    <p>I'm exited working in a team and one day became a teamleader, but until that happen I should be useful, punctual and understanding//////////// the concept of the whole project my team and I do. It's always a good thing have a good relationship with your co-workers and even there's a miscomunication you should always be able to avoid the conflict, cheer your coleeges and sort things up.</p>
                 </div>  
             </div>
-            
+                
         </div>
-
     </div>
-
 </div>
     
+<a class="up__button" href="#"><i class="fas fa-arrow-up"></i></a>
+
 <footer class="footer">
     <div class="footer__wrapper">
         <ul class="social">
@@ -123,5 +129,9 @@
     </div>
 </footer>
 
+
+<script src="./scripts/aos.js"></script>
+<script src="../src/scripts/main.js"></script>
+<script src="https://kit.fontawesome.com/05e40f5d54.js" crossorigin="anonymous"></script>
 </body>
 </html>

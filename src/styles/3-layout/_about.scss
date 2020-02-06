@@ -1,0 +1,114 @@
+.about {
+    width: 100%;
+    background-color: $white;
+    font-family: $gordita-regular;
+    line-height: 1.6rem;
+    color: $lightblack;
+    height: 100%;
+    &__photo {
+        width: 250px;
+        margin: 0 auto;
+        img {
+            width: 250px;
+        }
+    }
+    .resume {
+        width: 100%;
+        padding: 50px 0;
+        p {
+            margin: 20px 200px;
+            text-align: center;
+            font-size: 1.2rem;
+            @media (max-width: $breakpoint-tablet) {
+                width: 80%;
+                margin: 0 auto;
+            }
+            @media (max-width: $breakpoint-tablet) {
+                font-size: .8rem;
+            }
+        }
+        h3 {
+            margin: 50px auto 0 0;
+            @media (max-width: $breakpoint-tablet) {
+                margin: 1rem 1rem;
+            }
+        }
+        h1 {
+            margin: 10px auto 0 100px;
+            font-size: 2rem;
+        }
+        .about__experience {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            @media (max-width: $breakpoint-tablet) {
+                margin-top: 2rem;
+            }
+        }
+        
+    }
+    
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+    @media (max-width: $breakpoint-tablet) {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+    &__item {
+        width: 30%;
+        @media (max-width: $breakpoint-tablet) {
+            width: 100%;
+            margin: 1rem 0;
+        }
+    }
+    &__image {
+        width: 100%;
+        img {
+            width: 100%;
+            box-shadow: 5px 5px 15px #000;
+        }
+    }
+    &__inner {
+        position: relative;
+        cursor: pointer;
+        &:hover .card__text {
+            opacity: 1;
+        }
+        &:hover .card__image {
+            transform: translate3d(-10px, -10px, 0);
+        }
+        &:hover .card image img{
+            opacity: 1;
+        }
+    }
+    &__image {
+        transition: transform .2s linear;
+        img {
+            display: block;
+            transition: opacity .1s linear;
+        }
+    }
+    &__text {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        z-index: 2;
+        transform: translate3d(0, -50%, 0);
+        color: #fff;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+    
+        opacity: 0;
+        transition: opacity .2s linear;
+        
+    }
+}

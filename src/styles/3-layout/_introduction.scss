@@ -4,25 +4,43 @@
 	flex-direction: column;
     justify-content: center;
     color: $white;
+    @media (max-width: $breakpoint-tablet) {
+
+    }
     &__content {
         width: 100%;
-        padding: 100px 0 50px;
+        padding: 200px 0 100px;
         max-width: 700px;
         margin: 0 auto;
-        font-family: $font-regular;
+        font-family: $gordita-medium;
+        @media (max-width: $breakpoint-tablet) {
+            padding: 5rem 0 2rem;
+        }
         p {
+            font-size: .7rem;
+            line-height: 1.2rem;
             margin: 5px 100px;
+            opacity: .8;
+            @media (max-width: $breakpoint-tablet) {
+                margin: 1rem 1rem;
+            }
+            @media (max-width: $breakpoint-mobile) {
+                margin: 1rem 1rem;
+            }
         }
     }
     &__title {
-        font-size: 1.5rem;
-        color: $burgundy;
-        &:nth-child(2) {
-            padding: 5px 50px;
-            color: $white;
+        padding: 20px 0;
+        font-size: 2rem;
+        color: $white;
+        @media (max-width: $breakpoint-tablet) {
+            margin-left: 1rem;
         }
     }
     .global__button {
         margin: 20px 20px 20px 0;
+        @media (max-width: $breakpoint-tablet) {
+            margin: 1rem;
+        }
     }
 }
