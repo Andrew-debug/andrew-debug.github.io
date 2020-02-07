@@ -4,9 +4,6 @@
 	flex-direction: column;
     justify-content: center;
     color: $white;
-    @media (max-width: $breakpoint-tablet) {
-
-    }
     &__content {
         width: 100%;
         padding: 200px 0 100px;
@@ -29,8 +26,12 @@
             }
         }
     }
+    &__junior {
+        font-size: .5rem;
+        margin: 0 0 0 -40px;
+    }
     &__title {
-        padding: 20px 0;
+        padding: 0 0 20px;
         font-size: 2rem;
         color: $white;
         @media (max-width: $breakpoint-tablet) {

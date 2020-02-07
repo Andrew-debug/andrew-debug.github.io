@@ -35,6 +35,7 @@
 <div class="intro">
     <div class="container">
         <div data-aos="zoom-in" data-aos-duration="1200" class="intro__content">
+            <div class="intro__junior">Junior</div>
             <h2 class="intro__title">Front-end Developer</h2>
             <p>
                 Front-end developer based in Kyiv, Ukraine who loves building websites. Working as front-end developer passionate about combining beautiful code with beautiful design. Being resposibile for making your project successful is nothing but pleasure for me. Weather it is a simple landing page or really big project of some sort I'll get the job done whatever it takes.
@@ -47,60 +48,67 @@
 
 <section data-aos="fade-up" class="timeline">
     <div class="tl-item">
-        <div class="tl-bg" style="background-image: url(images/timeline/timeline1.jpg)"></div>
+        <div class="tl-bg" style="background-image: url(images/peek-work/1.png)"></div>
 
-        <div class="tl-year">
+        <!-- <div class="tl-year">
             <p class="f2 heading">2020</p>
-        </div>
+        </div> -->
 
         <div class="tl-content">
-            <h1>Lorem ipsum dolor sit</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero architecto ad autem voluptatum illum illo, nemo quisquam, ducimus numquam debitis blanditiis dicta sunt veritatis recusandae aut cupiditate iusto id.</p>
+            <a href="#work1">
+                <h1>Blooger</h1>
+                <p>This is one of my first projects. Looks preety good and simple. Good practise for beginners.</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="tl-item">
+        <div class="tl-bg" style="background-image: url(images/timeline/timeline2.png);"></div>
+
+        <!-- <div class="tl-year">
+            <p class="f2 heading">2020</p>
+        </div> -->
+
+        <div class="tl-content">
+            <a href="#work2">
+                <h1>Active Box</h1>
+                <p>This is my very first project. A little bit of practise using BEM naming and working with jQuery.</p>
+            </a>
+            
         </div>
 
     </div>
 
 
     <div class="tl-item">
-        <div class="tl-bg" style="background-image: url(images/timeline/timeline2.jpg);"></div>
+        <div class="tl-bg" style="background-image: url(images/timeline/timeline3.png);"></div>
 
-        <div class="tl-year">
+        <!-- <div class="tl-year">
             <p class="f2 heading">2020</p>
-        </div>
+        </div> -->
 
         <div class="tl-content">
-            <h1>Lorem ipsum dolor sit</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero architecto ad autem voluptatum illum illo, nemo quisquam, ducimus numquam debitis blanditiis dicta sunt veritatis recusandae aut cupiditate iusto id.</p>
+            <a href="#work3">
+                <h1>Portfolio v1</h1>
+                <p>This is my very first project which I created all by my self.</p>
+            </a>
         </div>
 
     </div>
 
 
     <div class="tl-item">
-        <div class="tl-bg" style="background-image: url(images/timeline/timeline3.jpg);"></div>
+        <div class="tl-bg" style="background-image: url(images/timeline/timeline4.png);"></div>
 
-        <div class="tl-year">
+        <!-- <div class="tl-year">
             <p class="f2 heading">2020</p>
-        </div>
+        </div> -->
 
         <div class="tl-content">
-            <h1>Lorem ipsum dolor sit</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero architecto ad autem voluptatum illum illo, nemo quisquam, ducimus numquam debitis blanditiis dicta sunt veritatis recusandae aut cupiditate iusto id.</p>
-        </div>
-
-    </div>
-
-
-    <div class="tl-item">
-        <div class="tl-bg" style="background-image: url(images/timeline/timeline4.jpg);"></div>
-
-        <div class="tl-year">
-            <p class="f2 heading">2020</p>
-        </div>
-
-        <div class="tl-content">
-            <h1>Lorem ipsum dolor sit</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero architecto ad autem voluptatum illum illo, nemo quisquam, ducimus numquam debitis blanditiis dicta sunt veritatis recusandae aut cupiditate iusto id.</p>
+            <a href="#work4">
+                <h1>Portfolio v2</h1>
+                <p>Second version of my portfolio. Multipage version with a little bit better design.</p>
+            </a>
         </div>
 
     </div>
@@ -109,19 +117,26 @@
 
 <div class="work">
     <div class="container">
-        <div data-aos="fade-up" class="work__row">
+        <div id="work1" data-aos="fade-up" class="work__row">
             <div class="work__text">
                 <h2>Blooger</h2>
-                <p>This is one of my first projects. Very simple landing page that look preety good for me and in my opinion very interesting for beginners in my sphere.</p>
+                <p>This is one of my first projects. Looks preety good and simple. Good practise for beginners.</p>
+                <div class="work__used">
+                    <ul class="work__items">
+                        <li class="work__item">HTML</li>
+                        <li class="work__item">CSS</li>
+                        <li class="work__item">AOS library</li>
+                    </ul>
+                </div>
                 <a class="global__button" href="https://andrew-debug.github.io/Blooger-layout/" target="_blank">Explore</a>
             </div>
 
             <div class="work__image">
-                <a href="https://andrew-debug.github.io/Blooger-layout/" target="_black"><img src="./images/peek-work/1.png" alt=""></a>
+                <a href="https://andrew-debug.github.io/Blooger-layout/" target="_blank"><img src="./images/peek-work/1.png" alt=""></a>
             </div>  
         </div>
 
-        <div data-aos="fade-up" class="work__row">
+        <div id="work2" data-aos="fade-up" class="work__row">
             <div class="work__image">
                 <a href="./activebox.html" target="_blank"><img src="./images/peek-work/2.png" alt=""></a>
             </div>    
@@ -129,28 +144,62 @@
             <div class="work__text">
                 <h2>Active Box</h2>
                 <p>This is my very first project. Was build with the help you a youtuber who made a tutorial for beginners about building a website with the help of HTML, CSS and jQuery. Very useful expirience especially working with jQuery.</p>
+                <div class="work__used">
+                    <ul class="work__items">
+                        <li class="work__item">HTML</li>
+                        <li class="work__item">CSS</li>
+                        <li class="work__item">jQuery</li>
+                    </ul>
+                </div>
                 <a class="global__button" href="./activebox.html" target="_blank">Explore</a>
             </div>   
         </div>
 
-        <div data-aos="fade-up" class="work__row">
+        <div id="work3" data-aos="fade-up" class="work__row">
                
-
             <div class="work__text">
                 <h2>Portfolio v1</h2>
                 <p>This is my very first project which I created all by my self. From designing to creating it into functional portfolio. Was build after a few month after I starded studying front-end. Not very nice, but hey, practise makes everything perfect.</p>
+                <div class="work__used">
+                    <ul class="work__items">
+                        <li class="work__item">HTML</li>
+                        <li class="work__item">Sass</li>
+                        <li class="work__item">JavaScript</li>
+                    </ul>
+                </div>
                 <a class="global__button" href="https://andrew-debug.github.io/portfoliov1/build/index.html" target="_blank">Explore</a>
             </div> 
             
             <div class="work__image">
                 <a href="https://andrew-debug.github.io/portfoliov1/build/index.html" target="_blank"><img src="./images/peek-work/3.png" alt=""></a>
             </div> 
+        </div> 
+
+        <div id="work3" data-aos="fade-up" class="work__row">
+
+            <div class="work__image">
+                <a href="#" target="_blank"><img src="./images/timeline/timeline4.png" alt=""></a>
+            </div> 
+
+            <div class="work__text">
+                <h2>Portfolio v2</h2>
+                <p>This is my very first project which I created all by my self. From designing to creating it into functional portfolio. Was build after a few month after I starded studying front-end. Not very nice, but hey, practise makes everything perfect.</p>
+                <div class="work__used">
+                    <ul class="work__items">
+                        <li class="work__item">HTML</li>
+                        <li class="work__item">Sass</li>
+                        <li class="work__item">JavaScript</li>
+                    </ul>
+                </div>
+                <a class="global__button" href="#" target="_blank">Explore</a>
+            </div> 
+            
         </div> <!-- work__row -->
     </div>
 </div> <!-- work -->
 
 
-<a class="up__button" href="#"><i class="fas fa-arrow-up"></i></a>
+<a id="up-button" class="up__button" href="#"><i class="fas fa-arrow-up"></i></a>
 
 <footer class="footer">
     <div class="footer__wrapper">
