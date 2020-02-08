@@ -32,5 +32,4 @@ window.addEventListener('scroll', () => {
     lastScrollTop = scrollTop;
 })
 
-
 AOS.init(); //block appearance animation init

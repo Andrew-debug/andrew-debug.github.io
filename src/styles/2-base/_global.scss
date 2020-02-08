@@ -3,7 +3,7 @@ html {
 }
 
 * {
-    outline: none;
+    box-sizing: border-box;
 }
 
 :root {
@@ -90,3 +90,4 @@ html.is-animating .transition-fade {
     height: 100%;
     overflow: hidden;
 }
+

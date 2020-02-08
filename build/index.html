@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="portfolio" content="This page was build by Andrew Yatsenko in 2020.">
     <link rel="stylesheet" href="../build/styles/main.css">
     <link rel="stylesheet" href="./styles/aos.css">
     <title>Portfolio.v2</title>
@@ -12,7 +13,7 @@
 <header id="header" class="header">
     <div class="header__inner">
         <a href="./index.html" class="header__logo">
-            <img src="./images/icons/logo.png" alt="">
+            <img src="./images/icons/logo.png" alt="ANDREI YATSENKO">
         </a>
 
         <nav class="nav">
@@ -47,14 +48,10 @@
 </div>
 
 <section data-aos="fade-up" class="timeline">
-    <div class="tl-item">
-        <div class="tl-bg" style="background-image: url(images/peek-work/1.png)"></div>
+    <div class="timeline__item">
+        <div class="timeline__bg" style="background-image: url(images/peek-work/1.png)"></div>
 
-        <!-- <div class="tl-year">
-            <p class="f2 heading">2020</p>
-        </div> -->
-
-        <div class="tl-content">
+        <div class="timeline__content">
             <a href="#work1">
                 <h1>Blooger</h1>
                 <p>This is one of my first projects. Looks preety good and simple. Good practise for beginners.</p>
@@ -62,14 +59,10 @@
         </div>
     </div>
 
-    <div class="tl-item">
-        <div class="tl-bg" style="background-image: url(images/timeline/timeline2.png);"></div>
+    <div class="timeline__item">
+        <div class="timeline__bg" style="background-image: url(images/timeline/timeline2.png);"></div>
 
-        <!-- <div class="tl-year">
-            <p class="f2 heading">2020</p>
-        </div> -->
-
-        <div class="tl-content">
+        <div class="timeline__content">
             <a href="#work2">
                 <h1>Active Box</h1>
                 <p>This is my very first project. A little bit of practise using BEM naming and working with jQuery.</p>
@@ -79,15 +72,10 @@
 
     </div>
 
+    <div class="timeline__item">
+        <div class="timeline__bg" style="background-image: url(images/timeline/timeline3.png);"></div>
 
-    <div class="tl-item">
-        <div class="tl-bg" style="background-image: url(images/timeline/timeline3.png);"></div>
-
-        <!-- <div class="tl-year">
-            <p class="f2 heading">2020</p>
-        </div> -->
-
-        <div class="tl-content">
+        <div class="timeline__content">
             <a href="#work3">
                 <h1>Portfolio v1</h1>
                 <p>This is my very first project which I created all by my self.</p>
@@ -96,15 +84,10 @@
 
     </div>
 
+    <div class="timeline__item">
+        <div class="timeline__bg" style="background-image: url(images/timeline/timeline4.png);"></div>
 
-    <div class="tl-item">
-        <div class="tl-bg" style="background-image: url(images/timeline/timeline4.png);"></div>
-
-        <!-- <div class="tl-year">
-            <p class="f2 heading">2020</p>
-        </div> -->
-
-        <div class="tl-content">
+        <div class="timeline__content">
             <a href="#work4">
                 <h1>Portfolio v2</h1>
                 <p>Second version of my portfolio. Multipage version with a little bit better design.</p>
@@ -114,13 +97,12 @@
     </div>
 </section>
 
-
 <div class="work">
     <div class="container">
         <div id="work1" data-aos="fade-up" class="work__row work__row--reverse">
 
             <div class="work__image">
-                <a href="https://andrew-debug.github.io/Blooger-layout/" target="_blank"><img src="./images/peek-work/1.png" alt=""></a>
+                <a href="https://andrew-debug.github.io/Blooger-layout/" target="_blank"><img src="./images/peek-work/1.png" alt="work layout"></a>
             </div>  
 
             <div class="work__text">
@@ -139,7 +121,7 @@
 
         <div id="work2" data-aos="fade-up" class="work__row">
             <div class="work__image">
-                <a href="./activebox.html" target="_blank"><img src="./images/peek-work/2.png" alt=""></a>
+                <a href="./activebox.html" target="_blank"><img src="./images/peek-work/2.png" alt="work layout"></a>
             </div>    
 
             <div class="work__text">
@@ -159,7 +141,7 @@
         <div id="work3" data-aos="fade-up" class="work__row work__row--reverse">
              
             <div class="work__image">
-                <a href="https://andrew-debug.github.io/portfoliov1/build/index.html" target="_blank"><img src="./images/peek-work/3.png" alt=""></a>
+                <a href="https://andrew-debug.github.io/portfoliov1/build/index.html" target="_blank"><img src="./images/peek-work/3.png" alt="work layout"></a>
             </div> 
               
             <div class="work__text">
@@ -179,7 +161,7 @@
         <div id="work4" data-aos="fade-up" class="work__row">
 
             <div class="work__image">
-                <a href="#" target="_blank"><img src="./images/timeline/timeline4.png" alt=""></a>
+                <a href="#" target="_blank"><img src="./images/timeline/timeline4.png" alt="work layout"></a>
             </div> 
 
             <div class="work__text">
@@ -196,7 +178,7 @@
             </div> 
             
         </div> <!-- work__row -->
-    </div>
+    </div> <!--container-->
 </div> <!-- work -->
 
 
@@ -207,22 +189,22 @@
         <ul class="social">
             <li class="social__item">
                 <a href="https://t.me/ribapivo" target="_blank">
-                    <img src="./images/icons/telegram.png" alt="">
+                    <img src="./images/icons/telegram.png" alt="telegram">
                 </a>
             </li>
             <li class="social__item">
                 <a href="https://github.com/Andrew-debug" target="_blank">
-                    <img src="./images/icons/github.png" alt="">
+                    <img src="./images/icons/github.png" alt="github">
                 </a>
             </li>
             <li class="social__item">
                 <a href="mailto:yatsenkoandy97@gmail.com" target="_top">
-                    <img src="./images/icons/gmail.png" alt="">
+                    <img src="./images/icons/gmail.png" alt="gmail">
                 </a>
             </li>
             <li class="social__item">
                 <a href="https://www.linkedin.com/in/andrew-yatsenko-a84623198/" target="_blank">
-                    <img src="./images/icons/linkedin.png" alt="">
+                    <img src="./images/icons/linkedin.png" alt="linkedin">
                 </a>
             </li>
         </ul>
