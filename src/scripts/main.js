@@ -4,7 +4,7 @@ let body = document.querySelector('body');
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
-    body.classList.toggle('active');
+    body.classList.toggle('active'); //burger thing
 });
 
 window.addEventListener('scroll', () => {
@@ -16,9 +16,21 @@ window.addEventListener('scroll', () => {
 
     } else {
         sideNav.style.visibility = 'visible';
-        sideNav.style.opacity = '1';
+        sideNav.style.opacity = '1'; //up-arrow fade
     }
+});
+
+let lastScrollTop = 0;
+    navbar = document.getElementById('header');
+window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        navbar.style.top = '-70px';
+    } else {
+        navbar.style.top = '0';
+    }
+    lastScrollTop = scrollTop;
 })
 
 
-AOS.init();
+AOS.init(); //block appearance animation init

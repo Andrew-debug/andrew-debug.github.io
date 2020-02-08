@@ -10,7 +10,7 @@
     <title>Portfolio.v2</title>
 </head>
 <body>
-<header id="header" data-aos="zoom-in" class="header">
+<header id="header" class="header">
     <div class="header__inner">
         <a href="./index.html" class="header__logo">Andrei Yatsenko</a>
 
@@ -117,7 +117,12 @@
 
 <div class="work">
     <div class="container">
-        <div id="work1" data-aos="fade-up" class="work__row">
+        <div id="work1" data-aos="fade-up" class="work__row work__row--reverse">
+
+            <div class="work__image">
+                <a href="https://andrew-debug.github.io/Blooger-layout/" target="_blank"><img src="./images/peek-work/1.png" alt=""></a>
+            </div>  
+
             <div class="work__text">
                 <h2>Blooger</h2>
                 <p>This is one of my first projects. Looks preety good and simple. Good practise for beginners.</p>
@@ -130,11 +135,7 @@
                 </div>
                 <a class="global__button" href="https://andrew-debug.github.io/Blooger-layout/" target="_blank">Explore</a>
             </div>
-
-            <div class="work__image">
-                <a href="https://andrew-debug.github.io/Blooger-layout/" target="_blank"><img src="./images/peek-work/1.png" alt=""></a>
-            </div>  
-        </div>
+        </div> <!-- work__row -->
 
         <div id="work2" data-aos="fade-up" class="work__row">
             <div class="work__image">
@@ -153,10 +154,14 @@
                 </div>
                 <a class="global__button" href="./activebox.html" target="_blank">Explore</a>
             </div>   
-        </div>
+        </div> <!-- work__row -->
 
-        <div id="work3" data-aos="fade-up" class="work__row">
-               
+        <div id="work3" data-aos="fade-up" class="work__row work__row--reverse">
+             
+            <div class="work__image">
+                <a href="https://andrew-debug.github.io/portfoliov1/build/index.html" target="_blank"><img src="./images/peek-work/3.png" alt=""></a>
+            </div> 
+              
             <div class="work__text">
                 <h2>Portfolio v1</h2>
                 <p>This is my very first project which I created all by my self. From designing to creating it into functional portfolio. Was build after a few month after I starded studying front-end. Not very nice, but hey, practise makes everything perfect.</p>
@@ -169,13 +174,9 @@
                 </div>
                 <a class="global__button" href="https://andrew-debug.github.io/portfoliov1/build/index.html" target="_blank">Explore</a>
             </div> 
-            
-            <div class="work__image">
-                <a href="https://andrew-debug.github.io/portfoliov1/build/index.html" target="_blank"><img src="./images/peek-work/3.png" alt=""></a>
-            </div> 
-        </div> 
+        </div> <!-- work__row -->
 
-        <div id="work3" data-aos="fade-up" class="work__row">
+        <div id="work4" data-aos="fade-up" class="work__row">
 
             <div class="work__image">
                 <a href="#" target="_blank"><img src="./images/timeline/timeline4.png" alt=""></a>
@@ -225,7 +226,6 @@
         </div>
     </div>
 </footer> 
-
 <script src="./scripts/aos.js"></script>
 <script src="../src/scripts/main.js"></script>
 <script src="https://kit.fontawesome.com/05e40f5d54.js" crossorigin="anonymous"></script>

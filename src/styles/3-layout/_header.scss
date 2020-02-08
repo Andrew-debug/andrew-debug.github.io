@@ -8,6 +8,7 @@
     z-index: 1;
     background-color: rgba(19, 19, 19, .87);
     color: $white;
+    transition: .5s;
     @media (max-width: $breakpoint-tablet) {
         position: absolute;
     }
