@@ -229,13 +229,6 @@ table {
   color: #fafafa;
 }
 
-.header__logo {
-  font-family: "Rationale", sans-serif;
-  font-size: 1.5rem;
-  color: #fafafa;
-  text-transform: uppercase;
-}
-
 @media (max-width: 812px) {
   .header__logo {
     position: absolute;

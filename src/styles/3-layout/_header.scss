@@ -1,5 +1,3 @@
-// main: ../main.scss
-
 .header {
     width: 100%;
     position: fixed;
@@ -20,10 +18,6 @@
         color: $white;
     }
     &__logo {
-        font-family: $font-regular;
-        font-size: 1.5rem;
-        color: $white;
-        text-transform: uppercase;
         @media (max-width: $breakpoint-tablet) {
             position: absolute;
             cursor: pointer;
