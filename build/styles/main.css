@@ -254,6 +254,8 @@ table {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fafafa;
+  -webkit-box-shadow: 0 0 5px 5px #000;
+          box-shadow: 0 0 5px 5px #000;
 }
 
 .intro__content {
@@ -294,6 +296,12 @@ table {
   margin: 0 0 0 -40px;
 }
 
+@media (max-width: 812px) {
+  .intro__junior {
+    display: none;
+  }
+}
+
 .intro__title {
   padding: 0 0 20px;
   font-size: 2rem;
@@ -314,152 +322,6 @@ table {
   .intro .global__button {
     margin: 1rem;
   }
-}
-
-.timeline {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #131313;
-}
-
-@media (max-width: 812px) {
-  .timeline {
-    display: none;
-  }
-}
-
-.timeline:hover .timeline__item {
-  width: 23.3333%;
-}
-
-.timeline__item {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  position: relative;
-  width: 25%;
-  height: 100vh;
-  min-height: 600px;
-  color: #fafafa;
-  overflow: hidden;
-  -webkit-transition: width .5s ease;
-  transition: width .5s ease;
-}
-
-.timeline__item:after {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(23, 23, 23, 0.9);
-  opacity: 1;
-  -webkit-transition: opacity .5s ease;
-  transition: opacity .5s ease;
-}
-
-.timeline__item:before {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(75%, black));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
-  z-index: 1;
-  opacity: 0;
-  -webkit-transform: translate3d(0, 0, 0) translateY(50%);
-          transform: translate3d(0, 0, 0) translateY(50%);
-  -webkit-transition: opacity .5s ease, -webkit-transform .5s ease;
-  transition: opacity .5s ease, -webkit-transform .5s ease;
-  transition: opacity .5s ease, transform .5s ease;
-  transition: opacity .5s ease, transform .5s ease, -webkit-transform .5s ease;
-}
-
-.timeline__item:hover {
-  width: 30% !important;
-}
-
-.timeline__item:hover:after {
-  opacity: 0;
-}
-
-.timeline__item:hover:before {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0) translateY(0);
-          transform: translate3d(0, 0, 0) translateY(0);
-  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease .25s;
-  transition: opacity 1s ease, -webkit-transform 1s ease .25s;
-  transition: opacity 1s ease, transform 1s ease .25s;
-  transition: opacity 1s ease, transform 1s ease .25s, -webkit-transform 1s ease .25s;
-}
-
-.timeline__item:hover .timeline__content {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: all .75s ease .5s;
-  transition: all .75s ease .5s;
-}
-
-.timeline__item:hover .timeline__bg {
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
-}
-
-.timeline__content {
-  -webkit-transform: translate3d(0, 0, 0) translateY(25px);
-          transform: translate3d(0, 0, 0) translateY(25px);
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  margin: 0.1618em;
-  top: 55%;
-  opacity: 0;
-}
-
-.timeline__content h1 {
-  text-transform: uppercase;
-  color: #1779cf;
-  font-size: 1.44rem;
-  font-weight: normal;
-}
-
-.timeline__year {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  z-index: 1;
-  border-top: 1px solid #fafafa;
-  border-bottom: 1px solid #fafafa;
-}
-
-.timeline__year p {
-  font-size: 1.628rem;
-}
-
-.timeline__bg {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transition: -webkit-filter .5s ease;
-  transition: -webkit-filter .5s ease;
-  transition: filter .5s ease;
-  transition: filter .5s ease, -webkit-filter .5s ease;
 }
 
 .work {
@@ -818,7 +680,7 @@ table {
   }
 }
 
-.nav__links.open {
+.nav.open {
   opacity: .9;
   left: 0;
 }
